@@ -1,0 +1,131 @@
+.serviceContainer{
+    display: flex;
+    width: 100%;
+    padding: 50px 50px;
+    height: 100vh;
+    overflow-x: hidden;
+    background-color: rgb(24, 189, 189);
+    color: white;
+}
+.serviceInfo{
+    width: 60rem;
+    padding: 1rem;
+    margin: 1.5rem;
+}
+.serviceInfo .serviceHeading{
+    font-size: 50px;
+    font-weight: 400;
+}
+.serviceInfo .serviceDescription{
+    font-size: 20px;
+    width: 395px;
+}
+.serviceInfo button{
+    height: 50px;
+    padding: 5px 10px;
+    border: 0px;
+    border-radius: 5px;
+    width: 235px;
+    color: white;
+    background-color: rgb(237, 76, 76);
+    font-size: 15px;
+    font-weight: 300;
+}
+.serviceInfo button :hover{
+    background-color: teal;
+}
+.services{
+    background-color: rgb(24, 189, 189);
+    width: 100%;
+    overflow-y: hidden;
+    /* height: 40px; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.service{
+    background-color: white;
+    color: rgb(24, 189, 189);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 15rem;
+    margin: 3px;
+    padding: 25px;
+    border-radius: 3px;
+    text-align: center;
+    align-items: center;
+}
+.serviceIcon{
+    height: 10rem;
+    width: 10rem;
+}
+.services :hover{
+    cursor: pointer;
+    color: rgb(237, 76, 76);
+    transition: 0.6s ease-in-out;
+}
+.service .serviceName{
+    font-size: 18px;
+}
+@media(max-width: 1500px){
+    .serviceContainer{
+        flex-direction: column;
+        padding: 25px 25px;
+    }
+    .serviceInfo{
+        width: 100%;
+        margin: auto;
+        padding: auto;
+    }
+    .serviceInfo .serviceHeading{
+        font-size: 25px;
+        font-weight: 400;
+    }
+    .serviceInfo .serviceDescription{
+        font-size: 12px;
+        width: 295px;
+    }
+    .serviceInfo button{
+        height: 40px;
+        padding: 3px 7px;
+        width: 195px;
+        font-size: 12px;
+    }
+    .services{
+        grid-template-columns: 1fr 1fr;
+    }
+    .service{
+        padding: 12px;
+        
+    }
+    .service .serviceName{
+        font-size: 12px;
+        height: 38px;
+    }
+}
+@media(max-width: 900px){
+    .serviceContainer{
+        flex-direction: column-reverse;
+        height: 70vh;
+        align-items: center;
+        padding: 10px 40px;
+    }
+    .serviceInfo .serviceHeading{
+        display: none;
+    }
+    .serviceInfo .serviceDescription{
+        display: none;
+    }
+    .serviceInfo button{
+        height: 40px;
+        padding: 3px 10px;
+        width: 195px;
+        font-size: 12px;
+    }
+    .serviceInfo{
+        overflow: hidden;
+    }
+    .services{
+        grid-template-columns: 1fr 1fr;
+    }
+}
