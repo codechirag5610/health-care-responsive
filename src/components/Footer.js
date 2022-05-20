@@ -43,7 +43,7 @@ const Footer = () => {
                     )
                 })}
             </div>
-            <p className="rights">&copy ALL RIGHTS RESERVED | PRIVACY POLICY</p>
+            <p className="rights">© ALL RIGHTS RESERVED | PRIVACY POLICY</p>
         </div>
     </div>
   )

@@ -32,6 +32,8 @@
 .navItemsSmallScreen{
     margin: 5px;
     display: flex;
+    flex-direction: column;
+    text-align: center;
 }
 .navItemsSmallScreen .navItemSmallScreen{
     margin: 7px;
@@ -40,6 +42,37 @@
     text-decoration: none;
 }
 .navItemsSmallScreen :hover{
+    color:rgb(25, 119, 119);
+    transition: 0.3s ease-in;
+}
+.infoContainerSmallScreen{
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.patientInfoSmallScreen{
+    display: flex;
+    flex-direction: column;
+}
+.patientInfoSmallScreen .infoItemSmallScreen{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    text-decoration: none;
+    color: white;
+}
+.patientInfoSmallScreen .infoItemSmallScreen:hover{
+    color:rgb(25, 119, 119);
+    transition: 0.3s ease-in;
+}
+.infoContainerSmallScreen .contactUsSmallScreen{
+    margin: 7px;
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+}
+.infoContainerSmallScreen .contactUsSmallScreen:hover{
     color:rgb(25, 119, 119);
     transition: 0.3s ease-in;
 }
@@ -81,7 +114,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 100vh;
+    height: 70vh;
     background-color: rgb(24, 189, 189);
     transition: 0.5s ease;
     flex-direction: column;

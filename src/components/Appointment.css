@@ -16,9 +16,9 @@
 }
 .formText{
     margin: 0px 45px;
-    /* display: flex;
+    display: flex;
     flex-direction: column;
-    justify-content: flex-start; */
+    justify-content: flex-start;
 }
 .form{
     flex: 1;
@@ -69,7 +69,7 @@
     opacity: 1; /* Firefox */
   }
 
-.button button{
+.form button{
     color: rgb(237, 76, 76);
     padding: 5px;
     margin: 5px;
@@ -78,13 +78,15 @@
     width: 400px;
     border: 0px;
     border-radius: 8px;
+    box-shadow: inset 0 0 0 0 rgb(24, 189, 189);
+  -webkit-transition: ease-in-out 0.6s;
+  -moz-transition: ease-in-out 0.6s;
+  transition: ease-in-out 0.6s;
 }
 
-.button button :hover{
-    background: linear-gradient((to right, #00bcbd 50.5%, white 49.5%));
-    /* background-size: 200% 100%; */
-    transition: all 1s ease-out;
-    /* cursor: pointer; */
+.form button:hover{
+    color: white;
+    box-shadow: inset 400px 0 0 0 rgb(24, 189, 189);
     
     
 }

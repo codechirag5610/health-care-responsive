@@ -1,0 +1,10 @@
+export { default as Navbar } from './Navbar';
+export { default as Slider } from './Slider';
+export { default as Appointment } from './Appointment';
+export { default as Info } from './Info';
+export { default as Services } from './Services';
+export { default as Doctors } from './Doctors';
+export { default as Testimonials } from './Testimonials';
+export { default as FindCare } from './FindCare';
+export { default as Blog } from './Blog';
+export { default as Footer } from './Footer';

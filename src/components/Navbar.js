@@ -49,18 +49,35 @@ const Navbar = () => {
                 </div>
                 <div className="navbarSmallScreen">
                     <GiHamburgerMenu  color='white' fontSize={27} onClick={() => setToggleMenu(true)} />
-                    {toggleMenu && (<><div className="navbarSmallScreenOverlay">
+                    {toggleMenu && 
+                    (<>
+                    <div className="navbarSmallScreenOverlay">
                         <IoIosClose fontSize={27} className="overlayClose" onClick={() => setToggleMenu(false)} />
-                    </div>
-                    <nav className='navItemsSmallScreen'>
-                        {navItems.map(navItem => {
-                            return(
-                                
-                                <a className='navItemSmallScreen' key={navItem.id} href={navItem.ref}>{navItem.name}</a>
-                                
-                            )
+                        <nav className='navItemsSmallScreen'>
+                    {navItems.map(navItem => {
+                        return(
+                            <a className='navItemSmallScreen' key={navItem.id} href={navItem.ref}>{navItem.name}</a>
+                        )
                         })}
-                    </nav></>)}
+                    </nav>
+                
+                    <div className="infoContainerSmallScreen">
+                        <div className="patientInfoSmallScreen">
+                            <nav>
+                                {infoItems.map(infoItem => {
+                                    return(
+                                        <a className='infoItemSmallScreen' key={infoItem.id} href={infoItem.ref}>{infoItem.name}</a>
+                                    )
+                                })}
+                            </nav>
+                        </div>
+                        <div className="contactUsSmallScreen">
+                            <a className="contactUsSmallScreen" href="#call">Call Us on: (561) 223-1234</a>
+                        </div>
+                    </div>
+                    </div>
+                    
+                </>)}
                 </div>
             </div>
         </header>

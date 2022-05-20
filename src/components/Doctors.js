@@ -1,11 +1,12 @@
 import React from 'react'
 import './Doctors.css'
+import doctor1 from '../Assets/doctor1.jpg';
 
 const Doctors = () => {
   const doctors = [
-    {id: 1, src: "../Assets/doctor1.jpg", name: "Bernice Ray", Speciality: "Chief Surgeon"},
-    {id: 1, src: "../Assets/doctor1.jpg", name: "Bernice Ray", Speciality: "Chief Surgeon"},
-    {id: 1, src: "../Assets/doctor1.jpg", name: "Bernice Ray", Speciality: "Chief Surgeon"},
+    {id: 1, src: doctor1, name: "Bernice Ray", Speciality: "Chief Surgeon"},
+    {id: 1, src: doctor1, name: "Bernice Ray", Speciality: "Chief Surgeon"},
+    {id: 1, src: doctor1, name: "Bernice Ray", Speciality: "Chief Surgeon"},
   ]
   return (
     <div className='doctorContainer'>

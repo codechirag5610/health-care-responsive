@@ -1,14 +1,20 @@
 import React from 'react'
 import './Services.css'
+import healthCare from "../Assets/healthcare.png"
+import brain from "../Assets/brain.png"
+import pediatry from "../Assets/pediatry.png"
+import heartbeat from "../Assets/heartbeat.png"
+import dental from "../Assets/dental-care.png"
+import bone from "../Assets/bone.png"
 
 const Services = () => {
     const services = [
-        {id: 1, src: "../Assets/healthcare.png", name: "Emergency Care"},
-        {id: 2, src: "../Assets/brain.png", name: "Neurology"},
-        {id: 3, src: "../Assets/pediatry.png", name: "Pediatry"},
-        {id: 4, src: "../Assets/heartbeat.png", name: "Cardiology"},
-        {id: 5, src: "../Assets/dental-care.png", name: "Dentistry"},
-        {id: 6, src: "../Assets/bone.png", name: "Orthonpedics"},
+        {id: 1, src: healthCare, name: "Emergency Care"},
+        {id: 2, src: brain, name: "Neurology"},
+        {id: 3, src: pediatry, name: "Pediatry"},
+        {id: 4, src: heartbeat, name: "Cardiology"},
+        {id: 5, src: dental, name: "Dentistry"},
+        {id: 6, src: bone, name: "Orthonpedics"},
     ]
   return (
     <div className='serviceContainer'>
