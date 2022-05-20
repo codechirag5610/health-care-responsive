@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .blogContainer{
     margin: 50px;
     text-align: center;
@@ -70,3 +71,77 @@
 .allBlogs .allBlogsButton:hover{
     box-shadow: inset 400px 0 0 0 rgb(237, 76, 76);
 }
+=======
+.blogContainer{
+    margin: 50px;
+    text-align: center;
+    color: darkcyan;
+    display: flex;
+    flex-direction: column;
+}
+.header .blogHeading{
+    padding: 10px;
+    font-size: 45px;
+    text-transform: uppercase;
+}
+.header .blogDescription{
+    padding: 10px;
+    font-size: 25px;
+    text-transform: uppercase;
+}
+.blogs{
+    display: flex;
+    justify-content: space-between;
+}
+.blogs img{
+    height: 70vh;
+    width: 100%;
+}
+.blog{
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    align-items: center;
+    width: 25rem;
+    justify-content: space-between;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.blog .blogInfo{
+    /* position: absolute; */
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 8px;
+    width: 100%;
+    background-color: #f1f8fc;
+    text-align: center;
+    overflow: hidden;
+    height: 25%;
+    transition: 0.5s ease;
+}
+.blog:hover .blogInfo{
+    color: rgb(237, 76, 76);
+}
+.blogInfo .blogTitle{
+    text-transform: capitalize;
+}
+.allBlogs .allBlogsButton{
+    padding: 16px 38px;
+    margin: 30px 0 10px 0;
+    border: 0px;
+    text-transform: capitalize;
+    text-decoration: none;
+    background-color: rgb(24, 189, 189);
+    color: white;
+    border-radius: 5px;
+    font-weight: 300;
+    box-shadow: inset 0 0 0 0 rgb(237, 76, 76);
+  -webkit-transition: ease-out 0.4s;
+  -moz-transition: ease-out 0.4s;
+  transition: ease-out 0.4s;
+}
+.allBlogs .allBlogsButton:hover{
+    box-shadow: inset 400px 0 0 0 rgb(237, 76, 76);
+}
+>>>>>>> 382da8993558c4472152e983e83b392407b03bcc
