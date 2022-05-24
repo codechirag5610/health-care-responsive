@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import './Navbar.css';
 import logo from '../Assets/logo.jpg';
+import { Link } from "react-router-dom";
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { IoIosClose } from "react-icons/io";
 
@@ -8,13 +9,13 @@ const Navbar = () => {
     const [toggleMenu, setToggleMenu] = useState(false);
 
     const navItems = [
-        {id: 1, name: "Services", ref:"#services"},
-        {id: 2, name: "Our Doctors",  ref:"#doctors"},
-        {id: 3, name: "Find A Doctor",  ref:"#finddoc"},
-        {id: 4, name: "About", ref:"#about"},
-        {id: 5, name: "Locations", ref:"#location"},
-        {id: 6, name: "Blog", ref:"#blog"},
-        {id: 7, name: "Career", ref:"#career"},
+        {id: 1, name: "Services", ref:"/services"},
+        {id: 2, name: "Our Doctors",  ref:"/experts"},
+        {id: 3, name: "Find A Doctor",  ref:"/finddoctor"},
+        {id: 4, name: "About", ref:"/about"},
+        {id: 5, name: "Locations", ref:"/locations"},
+        {id: 6, name: "Blog", ref:"/blogs"},
+        {id: 7, name: "Career", ref:"/career"},
     ]
     const infoItems = [
         {id: 1, name: "Online Bill Pay", ref:"#payment"},
@@ -28,7 +29,7 @@ const Navbar = () => {
                 <nav className='navItems'>
                     {navItems.map(navItem => {
                         return(
-                            <a className='navItem' key={navItem.id} href={navItem.ref}>{navItem.name}</a>
+                            <Link className='navItem' key={navItem.id} to={navItem.ref}>{navItem.name}</Link>
                         )
                     })}
                 </nav>
@@ -38,7 +39,7 @@ const Navbar = () => {
                         <nav>
                             {infoItems.map(infoItem => {
                                 return(
-                                    <a className='infoItem' key={infoItem.id} href={infoItem.ref}>{infoItem.name}</a>
+                                    <Link className='infoItem' key={infoItem.id} to={infoItem.ref}>{infoItem.name}</Link>
                                 )
                             })}
                         </nav>

@@ -8,3 +8,4 @@ export { default as Testimonials } from './Testimonials';
 export { default as FindCare } from './FindCare';
 export { default as Blog } from './Blog';
 export { default as Footer } from './Footer';
+export { default as PageName } from './PageName';

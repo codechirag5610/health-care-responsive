@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Navbar, Slider, Appointment, Info, Services, Doctors, FindCare, Blog, Footer } from '../../components/index.js'
+import { Navbar, Slider, Appointment, Info, Services, Doctors, Testimonials, FindCare, Blog, Footer } from '../../components/index.js'
 
 const Home = () => {
   const [appointments, setAppointments] = useState([{name: 'Chirag', email:'sharmachirag465@gmail.com', service:'cardio', date: 5/5/2022, id: 1},]);
@@ -19,6 +19,7 @@ const Home = () => {
         <Info />
         <Services />
         <Doctors />
+        <Testimonials />
         <FindCare />
         <Blog /> 
         <Footer />

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 .blogContainer{
     margin: 50px;
     text-align: center;
@@ -71,7 +70,7 @@
 .allBlogs .allBlogsButton:hover{
     box-shadow: inset 400px 0 0 0 rgb(237, 76, 76);
 }
-=======
+
 .blogContainer{
     margin: 50px;
     text-align: center;
@@ -144,4 +143,4 @@
 .allBlogs .allBlogsButton:hover{
     box-shadow: inset 400px 0 0 0 rgb(237, 76, 76);
 }
->>>>>>> 382da8993558c4472152e983e83b392407b03bcc
+

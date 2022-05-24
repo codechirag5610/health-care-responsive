@@ -20,7 +20,7 @@ const Blog = () => {
         <div className="blogs">
           {blogs.map(blog => {
             return(
-              <div className="blog">
+              <div key={blog.id} className="blog">
                 <img src={blog.src} alt="" className="blogImage" />
                 <div className="blogInfo">
                   <h2 className="blogTitle">{blog.name}</h2>

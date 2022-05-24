@@ -1,0 +1,71 @@
+.servicesPageContainer{
+    background-color: #f1f8fc;
+}
+.servicesPageContainer{
+    padding: 50px 75px;
+    text-align: center;
+    color: teal;
+}
+.servicesPageTitle{
+    padding: 35px 0;
+}
+.servicesPageTitle .servicesPageHeading{
+    text-transform: uppercase;
+    font-size: 50px;
+}
+.servicesPageTitle .servicesPagedescription{
+    text-transform: capitalize;
+    font-size: 22px;
+}
+.servicesPage{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.servicesPage p{
+    padding: 30px;
+    margin: 15px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px 0 rgba(29, 29, 29, 0.4), 0 3px 10px 0 rgba(29, 29, 29, 0.19);
+}
+.servicesPage p:hover{
+    transform: scale(1.1,1.1);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: 0.4s ease-in-out;
+}
+.servicesPage .allService{
+    text-decoration: none;
+    
+    color: rgb(24,189,189);
+    font-size: 20px;
+}
+.serviceTestimony{
+    height: 40vh;
+    padding: 25px;
+    margin: 25px;
+    border-radius: 5px;
+    overflow-y: hidden;
+    background-color: rgb(24,189,189);
+}
+@media(max-width: 1150px){
+    .servicesPageContainer{
+        padding: 35px 60px;
+    }
+    .servicesPage{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+@media(max-width: 850px){
+    .servicesPageContainer{
+        padding: 25px 50px;
+    }
+    .servicesPage{
+        grid-template-columns: 1fr 1fr;
+    }
+    .servicesPageTitle .servicesPageHeading{
+        font-size: 30px;
+    }
+    .servicesPageTitle .servicesPagedescription{
+        font-size: 16px;
+    }
+}
