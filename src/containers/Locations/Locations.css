@@ -1,0 +1,94 @@
+.locationsContainer{
+    padding: 50px 75px;
+}
+.locationsContainer .locationHeading h1{
+    font-size: 45px;
+    font-weight: 600;
+    color: teal;
+    text-transform: uppercase;
+}
+.locationsContainer .locationsHrLine{
+    margin: 40px 0;
+    height: 0.04rem;
+    background-color: rgb(167, 196, 213);
+}
+.locationsContainer .locations{
+    width: 100%;
+}
+.locations .location{
+    padding: 35px 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.location .locationsHrLine{
+    margin: 40px 0;
+    height: 0.04rem;
+    background-color: rgb(167, 196, 213);
+}
+.locationMap .healthCareMap{
+    width: 600px;
+    border: 2px solid rgb(167, 196, 213);
+    border-radius: 3px;
+    height: 328px
+}
+.locationText .locationName{
+    padding: 15px 0;
+    /* font-size: 45px; */
+    color: rgb(24, 189, 189);
+    text-transform: uppercase;
+}
+.locationText h4{
+    padding-top: 4px;
+    /* font-size: 25px; */
+    color: rgb(47, 75, 89);
+    text-transform: capitalize;
+}
+.locationText button{
+    height: 50px;
+    margin: 10px 0;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    border: 0px;
+    border-radius: 5px;
+    width: 235px;
+    color: white;
+    background-color: rgb(237, 76, 76);
+    font-size: 15px;
+    font-weight: 300;
+    box-shadow: inset 0 0 0 0 #184f68;
+  -webkit-transition: ease-in-out 0.6s;
+  -moz-transition: ease-in-out 0.6s;
+  transition: ease-in-out 0.6s;
+}
+.locationText button:hover{
+    box-shadow: inset 400px 0 0 0 #184f68;
+}
+
+@media(max-width: 1250px){
+    .locations .location{
+        flex-direction: column;
+    }
+}
+@media(max-width: 800px){
+    .locationsContainer{
+        padding: 50px 0; 
+        /* align-items: center; */
+        text-align: center;
+    }
+    .locationMap .healthCareMap{
+        width: 500px;
+        height: 288px;
+    }
+}
+@media(max-width: 510px){
+    .locationMap .healthCareMap{
+        width: 268px;
+        height: 150px;
+    }
+    .locationText button{
+        height: 30px;
+        width: 140px;
+    }
+}

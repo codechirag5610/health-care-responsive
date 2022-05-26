@@ -1,13 +1,9 @@
 import React from 'react'
 import './Doctors.css'
-import doctor1 from '../Assets/doctor1.jpg';
 
-const Doctors = () => {
-  const doctors = [
-    {id: 1, src: doctor1, name: "Bernice Ray", Speciality: "Chief Surgeon"},
-    {id: 1, src: doctor1, name: "Bernice Ray", Speciality: "Chief Surgeon"},
-    {id: 1, src: doctor1, name: "Bernice Ray", Speciality: "Chief Surgeon"},
-  ]
+
+const Doctors = ({ handleClick, doctors, isVisible }) => {
+  
   return (
     <div className='doctorContainer'>
       <div className="info">
@@ -28,8 +24,8 @@ const Doctors = () => {
           )
         })}
       </div>
-      <div className="allDoctors">
-        <button className="seeAllDoctors">see all doctors</button>
+      <div style={{ display: isVisible ? "block" : "none" }} className="allDoctors">
+        <button className="seeAllDoctors" onClick={handleClick}>see all doctors</button>
       </div>
     </div>
   )

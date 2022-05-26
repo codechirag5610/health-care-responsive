@@ -24,7 +24,7 @@ const Navbar = () => {
     ]
   return (
         <header className='headerContainer'>
-            <img className='logo' src={logo} alt="" />
+            <Link to="/"><img className='logo' src={logo} alt="" /></Link>
             <div className="navContainer">
                 <nav className='navItems'>
                     {navItems.map(navItem => {

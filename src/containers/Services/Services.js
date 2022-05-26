@@ -1,12 +1,22 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React, { useState } from 'react'
+import { Link, useNavigate } from 'react-router-dom'
 import { Navbar, Appointment, Doctors, Footer, PageName } from '../../components/index.js'
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import './Services.css'
-import color from '../../Assets/color.jpg';
+import doctor1 from '../../Assets/doctor1.jpg';
 
 const Services = () => {
+  const isVisible = true;
+  let navigate = useNavigate();
+  const doctors = [
+    {id: 1, src: doctor1, name: "Bernice Ray", Speciality: "Chief Surgeon"},
+    {id: 2, src: doctor1, name: "Bernice Ray", Speciality: "Chief Surgeon"},
+    {id: 3, src: doctor1, name: "Bernice Ray", Speciality: "Chief Surgeon"},
+  ]
+  const handleClick = () => {
+      navigate("/experts", { replace: true});
+  }
   const allServices = [
     {id: 1, name: "24/7 Emergency Care", src: "/services/emergency"},
     {id: 1, name: "Primary Care", src: "/services/primary"},
@@ -84,7 +94,7 @@ const Services = () => {
           </div>)})}
         </Carousel>
         </div>
-        <Doctors />
+        <Doctors handleClick={handleClick} doctors={doctors} isVisible={isVisible} />
         <Footer />
     </div>
   )

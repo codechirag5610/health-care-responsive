@@ -6,6 +6,12 @@ import doctor from '../Assets/doctorlogo.jpg'
 import id from '../Assets/idlogo.jpg'
 
 const Info = () => {
+    const howMuch = [
+        {id: 1, name: "Beds", amount: "800+", src: bed},
+        {id: 2, name: "Team Members", amount: "1200+", src: id},
+        {id: 3, name: "Doctors", amount: "550+", src: doctor},
+        {id: 4, name: "Volunteers", amount: "600+", src: volun},
+    ]
   return (
     <div className='infoContainer2'>
         <div className="information">
@@ -26,26 +32,13 @@ const Info = () => {
                 </p>
             </div>
             <div className="stats">
-                <div className="stat">
-                    <img src={bed} alt="bed" />
-                    <p className='numbers'>800+</p>
-                    <p className="subjects">Beds</p>
-                </div>
-                <div className="stat">
-                    <img src={id} alt="members" />
-                    <p className='numbers'>1200+</p>
-                    <p className="subjects">Team Members</p>
-                </div>
-                <div className="stat">
-                    <img src={doctor} alt="doctors" />
-                    <p className="numbers">550+</p>
-                    <p className="subjects">Doctors</p>
-                </div>
-                <div className="stat">
-                    <img src={volun} alt="volunteers" />
-                    <p className="numbers">600+</p>
-                    <p className="subjects">Volunteers</p>
-                </div>
+                {howMuch.map(how => { return(
+                    <div id={how.id} className="stat">
+                        <img src={how.src} alt={how.name} />
+                        <p className='numbers'>{how.amount}</p>
+                        <p className="subjects">{how.name}</p>
+                    </div>    
+                )})}
             </div>
         </div>
         <div className="contactInformation">

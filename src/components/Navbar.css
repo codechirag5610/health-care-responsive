@@ -5,7 +5,8 @@
     align-items: center;
     background-color: rgb(24, 189, 189);
 }
-.logo{
+.headerContainer .logo{
+    width: 90%;
     margin: 10px;
     border-radius: 10px;
 }

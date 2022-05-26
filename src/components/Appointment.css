@@ -2,7 +2,6 @@
     background-color: rgb(237, 76, 76);
     padding: 15px;
     border-radius: 5px;
-    /* box-shadow: 50px; */
     display: flex;
     height: 40vh;
     position: relative;
@@ -22,6 +21,9 @@
 }
 .form{
     flex: 1;
+}
+.form .input{
+    display: flex;
 }
 .formText .title{
     padding: 25px 0;
@@ -121,5 +123,39 @@
         font-size: 20px;
         height: 45px;
         width: 250px;
+    }
+}
+@media(max-width: 700px){
+    .formContainer{
+        width: 500px;
+    }
+    .form .input{
+        flex-direction: column;
+    }
+    .input input{
+        height: 35px;
+        width: 200px;
+    }
+    
+    .input select{
+        height: 35px;
+        width: 200px;
+    }
+    .button button{
+        color: rgb(237, 76, 76);
+        padding: 5px;
+        margin: 5px;
+        font-size: 20px;
+        height: 40px;
+        width: 200px;
+    }
+}
+@media(max-width: 520px){
+    .formContainer{
+        width: 260px;
+        padding: 0;
+    }
+    .formText{
+        margin: 0px 45px;
     }
 }
