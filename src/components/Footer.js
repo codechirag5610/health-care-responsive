@@ -9,8 +9,8 @@ const Footer = () => {
         {id:3, name: 'FIND A DOCTOR', src: '/finddoctor'},
         {id:4, name: 'ABOUT', src: '/about'},
         {id:5, name: 'LOCATION', src: '/locations'},
-        {id:6, name: 'ONLINE BILL PAY', src: '#payment'},
-        {id:7, name: 'TESTIMONIALS', src: '#testimonials'},
+        {id:6, name: 'ONLINE BILL PAY', src: '/payment'},
+        {id:7, name: 'TESTIMONIALS', src: '/testimonials'},
         {id:8, name: 'BLOG', src: '/blogs'},
     ]
   return (

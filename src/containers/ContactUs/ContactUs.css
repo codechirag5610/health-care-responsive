@@ -1,0 +1,109 @@
+.contactFormHero{
+    width: 80vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin: -35px auto 35px auto;
+    background-color: white;
+    position: relative;
+    border-radius: 3px;
+    z-index: 2;
+    /* margin: auto; */
+    /* padding: 15px; */
+}
+.contactForm{
+    flex: 1;
+    padding: 35px;
+}
+.contactForm .formHead{
+    color: rgb(17, 94, 94);
+    text-transform: uppercase;
+}
+.contactForm .contactFormDetails{
+    color: rgb(17, 94, 94);
+    text-transform: capitalize;
+    font-size: 25px;
+}
+.contactForm form{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.contactForm input{
+    margin: 15px;
+    padding: 15px;
+    width: 400px;
+    height: 50px;
+}
+.contactForm button{
+    margin: 15px;
+    padding: 10px;
+    width: 240px;
+    color: white;
+    background-color: #f84d4f;
+    border-radius: 3px;
+    border: 0;
+    height: 50px;
+    box-shadow: inset 0 0 0 0 #184f68;
+  -webkit-transition: ease-in-out 0.6s;
+  -moz-transition: ease-in-out 0.6s;
+  transition: ease-in-out 0.6s;
+}
+.contactForm button:hover{
+    box-shadow: inset 400px 0 0 0 #184f68;
+}
+.differentContactsHero{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: rgb(24, 189, 189);
+    color: white;
+    align-items: center;
+    text-align: center;
+    padding: 125px 75px;
+}
+.differentContactsHero a{
+    color: white;
+    text-decoration: none;
+    font-size: 35px;
+    font-weight: 400;
+}
+.differentContactsHero a:hover{
+    color: #184f68;
+    /* transform: scale(2, 2); */
+    transition: 0.5s ease-in-out;
+}
+.callUs .callUsToday{
+    /* padding-top: 75px; */
+    text-transform: capitalize;
+    font-size: 25px;
+    font-weight: 300;
+}
+.emailUs .emailUsToday{
+    text-transform: capitalize;
+    padding-top: 75px;
+    font-size: 25px;
+    font-weight: 300;
+}
+.differentContactsHero .contactConnection{
+    padding: 105px 0 0 0;
+    font-size: 25px;
+    font-weight: 300;
+    text-transform: capitalize;
+}
+.connectedLogos .connectLogo{
+    margin: 0 15px;
+    width: 50px;
+    height: 50px;
+}
+.connectedLogos .connectLogo{
+    color: white;
+    margin: 0 15px;
+    width: 40px;
+    height: 40px;
+}
+.connectedLogos :hover{
+    transition: 0.3s ease-in-out;
+    color: #184f68;
+}

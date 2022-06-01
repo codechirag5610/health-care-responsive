@@ -18,9 +18,9 @@ const Navbar = () => {
         {id: 7, name: "Career", ref:"/career"},
     ]
     const infoItems = [
-        {id: 1, name: "Online Bill Pay", ref:"#payment"},
-        {id: 2, name: "Patient Info", ref:"#patient"},
-        {id: 3, name: "Contact", ref:"#contact"},
+        {id: 1, name: "Online Bill Pay", ref:"/payment"},
+        {id: 2, name: "Patient Info", ref:"/patient"},
+        {id: 3, name: "Contact", ref:"/contact"},
     ]
   return (
         <header className='headerContainer'>
@@ -57,7 +57,7 @@ const Navbar = () => {
                         <nav className='navItemsSmallScreen'>
                     {navItems.map(navItem => {
                         return(
-                            <a className='navItemSmallScreen' key={navItem.id} href={navItem.ref}>{navItem.name}</a>
+                            <Link className='navItemSmallScreen' key={navItem.id} to={navItem.ref}>{navItem.name}</Link>
                         )
                         })}
                     </nav>
@@ -67,7 +67,7 @@ const Navbar = () => {
                             <nav>
                                 {infoItems.map(infoItem => {
                                     return(
-                                        <a className='infoItemSmallScreen' key={infoItem.id} href={infoItem.ref}>{infoItem.name}</a>
+                                        <Link className='infoItemSmallScreen' key={infoItem.id} to={infoItem.ref}>{infoItem.name}</Link>
                                     )
                                 })}
                             </nav>

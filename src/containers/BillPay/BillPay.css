@@ -1,0 +1,109 @@
+.paymentFormContainer{
+    padding: 95px;
+}
+.formHeading{
+    padding: 10px 10px 10px 0;
+    color: rgb(24, 189, 189);
+}
+.formDescription{
+    padding: 15px 15px 15px 0;
+    color: rgb(14, 62, 62);
+}
+.form form{
+    display: flex;
+    flex-direction: column;
+}
+.inputs{
+    display: flex;
+    justify-content: space-between;
+}
+.input{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.input .billInput{
+    margin: 0;
+    background-color: white;
+    border: 1px solid rgb(24, 189, 189);
+}
+.input label{
+    font-size: 20px;
+    width: 100%;
+}
+.buttons{
+    margin: auto;
+    padding: auto;
+}
+.buttons button{
+    margin: 25px 12px;
+    border-radius: 3px;
+    height: 48px;
+    border: 0;
+}
+.buttons .continue{
+    width: 15rem;
+    color: white;
+    font-weight: 200;
+    background-color: rgb(24, 189, 189);
+    box-shadow: inset 0 0 0 0 rgb(227, 101, 101);
+  -webkit-transition: ease-in-out 0.6s;
+  -moz-transition: ease-in-out 0.6s;
+  transition: ease-in 0.6s;
+}
+.continue:hover{
+    color: white;
+    box-shadow: inset 400px 0 0 0 rgb(227, 101, 101);
+}
+.buttons .reset{
+    width: 10rem;
+    color: white;
+    font-weight: 200;
+    background-color: rgb(183, 188, 188);
+    box-shadow: inset 0 0 0 0 rgb(24, 189, 189);
+    -webkit-transition: ease-in-out 0.6s;
+    -moz-transition: ease-in-out 0.6s;
+    transition: ease-in 0.6s;
+}
+.reset:hover{
+    color: white;
+    box-shadow: inset 400px 0 0 0 rgb(24, 189, 189);
+}
+
+@media(max-width: 1270px){
+    .input .billInput{
+        height: 40px;
+        width: 280px;
+    }
+}
+@media(max-width: 1060px){
+    .paymentFormContainer{
+        padding: 65px;
+    }
+    .input .billInput{
+        height: 40px;
+        width: 100%;
+    }
+}
+@media(max-width: 660px){
+    .paymentFormContainer{
+        padding: 55px;
+    }
+    .input .billInput{
+        height: 40px;
+        width: 100%;
+    }
+    .inputs{
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+@media(max-width: 360px){
+    .buttons .continue{
+        width: 10rem;
+    }
+    .buttons .reset{
+        width: 8rem;
+    }
+}

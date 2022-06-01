@@ -6,3 +6,7 @@ export { default as About } from './About/About';
 export { default as Locations } from './Locations/Locations';
 export { default as Blogs } from './Blog/Blogs';
 export { default as Career } from './Career/Career';
+export { default as ContactUs } from './ContactUs/ContactUs';
+export { default as PatientInfo } from './PatientInfo/PatientInfo';
+export { default as BillPay } from './BillPay/BillPay';
+export { default as Testimonials } from './Testimonials/Testimonials';

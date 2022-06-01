@@ -5,7 +5,7 @@ import {
   Routes,
   Route,
 } from "react-router-dom";
-import { Home, Services, Experts, FindDoctor, About, Locations, Blogs, Career } from './containers/index.js';
+import { Home, Services, Experts, FindDoctor, About, Locations, Blogs, Career, ContactUs, PatientInfo, BillPay, Testimonials } from './containers/index.js';
 
 function App() {
 
@@ -21,6 +21,10 @@ function App() {
           <Route path="locations" element={<Locations />} />
           <Route path="blogs" element={<Blogs />} />
           <Route path="career" element={<Career />} />
+          <Route path="payment" element={<BillPay />} />
+          <Route path="patient" element={<PatientInfo />} />
+          <Route path="contact" element={<ContactUs />} />
+          <Route path="testimonials" element={<Testimonials />} />
         </Routes>
       </BrowserRouter>
     </div>

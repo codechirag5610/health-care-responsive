@@ -1,0 +1,32 @@
+.bestTestiContainer{
+    padding: 25px;
+    background-color: #f84d4f;
+    width: 80vw;
+    border-radius: 5px;
+    margin: -55px auto 55px auto;
+    position: relative;
+    z-index: 2;
+    /* margin: auto; */
+    display: flex;
+    color: white;
+}
+.quoteIcon{
+    width: 220px;
+    height: 100px;
+}
+.testiQuote{
+    width: 45px;
+    height: 45px;
+}
+.testiText{
+    font-size: 20px;
+}
+.testiBy{
+    width: 25%;
+    display: flex;
+    justify-content: space-between;
+}
+.byName{
+    text-transform: uppercase;
+    font-size: 18px;
+}

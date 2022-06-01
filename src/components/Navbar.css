@@ -134,6 +134,12 @@
     .navItems {
         display: none;
     }
+    .patientInfo{
+        display: none;
+    }
+    .contactUs{
+        display: none;
+    }
     .navbarSmallScreen{
         display: flex;
     }

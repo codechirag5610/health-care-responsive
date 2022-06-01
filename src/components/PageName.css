@@ -13,7 +13,7 @@
 }
 .pageName .pageHeading{
     text-align: center;
-    /* padding-top: 100px; */
+    text-transform: uppercase;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
