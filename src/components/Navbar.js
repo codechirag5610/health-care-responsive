@@ -45,7 +45,7 @@ const Navbar = () => {
                         </nav>
                     </div>
                     <div className="contactUs">
-                        <a className="contactUs" href="#call">Call Us on: (561) 223-1234</a>
+                        <a className="contactUs" href="tel:(561)223-1234">Call Us on: (561) 223-1234</a>
                     </div>
                 </div>
                 <div className="navbarSmallScreen">
@@ -73,7 +73,7 @@ const Navbar = () => {
                             </nav>
                         </div>
                         <div className="contactUsSmallScreen">
-                            <a className="contactUsSmallScreen" href="#call">Call Us on: (561) 223-1234</a>
+                            <a className="contactUsSmallScreen" href="tel:(561)223-1234">Call Us on: (561) 223-1234</a>
                         </div>
                     </div>
                     </div>

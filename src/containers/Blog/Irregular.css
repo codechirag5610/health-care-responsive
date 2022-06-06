@@ -1,0 +1,23 @@
+.irregularBlogHero{
+    height: 48vh;
+    background-color: rgb(237, 76, 76);
+}
+.irregularBlogContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    padding: auto 0; 
+}
+.irregularBlogText{
+    text-transform: capitalize;
+    padding: 12px 0;
+    font-size: 25px;
+    font-weight: 600;
+    color: white;
+}
+.irregularBlogSource{
+    text-transform: uppercase;
+    bottom: 0;
+    color: grey;
+}

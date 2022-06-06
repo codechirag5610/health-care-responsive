@@ -1,0 +1,35 @@
+.singleBlogHero{
+    width: 309px;
+    overflow: hidden;
+
+}
+.singleImageContainer img{
+    width: 100%;
+    height: 45vh;
+
+}
+.singleBlogContainer{
+    height: 40vh;
+    overflow: hidden;
+}
+.blogDate{
+    padding: 5px;
+    font-weight: 300;
+    text-transform: capitalize;
+    color: rgb(237, 76, 76);
+}
+.blogTitle{
+    color: rgb(24, 189, 189);
+    font-weight: 500;
+    font-size: 22px;
+    padding: 5px;
+}
+.blogTitle:hover{
+    color: rgb(237, 76, 76);
+    transition: 0.3s ease-in-out;
+}
+.blogText{
+    padding: 5px;
+    font-size: 19px;
+    color: rgb(92, 90, 90);
+}

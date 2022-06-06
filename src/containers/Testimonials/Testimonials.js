@@ -13,6 +13,18 @@ const Testimonials = () => {
     {id:2, src: testi1, title: "johnson doe"},
     {id:3, src: testi3, title: "garima anand"},
   ]
+  const allTestimonies = [
+    {id: 1, text: "Whose forth kind moving divide. Own so in bearing light fruitful. Beginning give fourth i, a image meat thing after night place very created. Evening forth make replenish without our. Him replenish made seasons mosum.", name: "irvin tuttle"},
+    {id: 2, text: "Whose forth kind moving divide. Own so in bearing light fruitful. Beginning give fourth i, a image meat thing after night place very created. Evening forth make replenish without our. Him replenish made seasons mosum.", name: "joshua spalding"},
+    {id: 3, text: "Whose forth kind moving divide. Own so in bearing light fruitful. Beginning give fourth i, a image meat thing after night place very created. Evening forth make replenish without our. Him replenish made seasons mosum.", name: "richard contreas"},
+    {id: 4, text: "Whose forth kind moving divide. Own so in bearing light fruitful. Beginning give fourth i, a image meat thing after night place very created. Evening forth make replenish without our. Him replenish made seasons mosum.", name: "bertha corker"},
+    {id: 5, text: "Whose forth kind moving divide. Own so in bearing light fruitful. Beginning give fourth i, a image meat thing after night place very created. Evening forth make replenish without our. Him replenish made seasons mosum.", name: "amanda burke"},
+    {id: 6, text: "Whose forth kind moving divide. Own so in bearing light fruitful. Beginning give fourth i, a image meat thing after night place very created. Evening forth make replenish without our. Him replenish made seasons mosum.", name: "john doe"},
+    {id: 7, text: "Whose forth kind moving divide. Own so in bearing light fruitful. Beginning give fourth i, a image meat thing after night place very created. Evening forth make replenish without our. Him replenish made seasons mosum.", name: "martha pinto"},
+    {id: 8, text: "Whose forth kind moving divide. Own so in bearing light fruitful. Beginning give fourth i, a image meat thing after night place very created. Evening forth make replenish without our. Him replenish made seasons mosum.", name: "abby rosso"},
+    {id: 9, text: "Whose forth kind moving divide. Own so in bearing light fruitful. Beginning give fourth i, a image meat thing after night place very created. Evening forth make replenish without our. Him replenish made seasons mosum.", name: "john doe"},
+    {id: 10, text: "Whose forth kind moving divide. Own so in bearing light fruitful. Beginning give fourth i, a image meat thing after night place very created. Evening forth make replenish without our. Him replenish made seasons mosum.", name: "anthony harrison"},
+  ]
     const pageHeading = "Our Testimonials"
   return (
     <div className='testimonialsHero'>
@@ -42,6 +54,22 @@ const Testimonials = () => {
                 <p>-Satisfied Patient</p>
               </div>
             </div>
+            </div>
+          )
+        })}
+      </section>
+      <section className="allTestimoniContainer">
+        {allTestimonies.map(testimoni => {
+          return(
+            <div className="testimoniContainer">
+              <div className="quoteIconTestimoni"><FontAwesomeIcon className='testiQuoteIcon' icon={faQuoteLeft} /></div>
+              <div className="testi">
+                <p className='testiText'><i>{testimoni.text}</i></p>
+                <div className="testiBy">
+                    <p className="byName">{testimoni.name}</p>
+                    <p className="byWho">-Satisfied patient</p>
+                </div>
+              </div>
             </div>
           )
         })}

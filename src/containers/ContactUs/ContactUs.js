@@ -26,7 +26,7 @@ const ContactUs = () => {
           <div className="callUs">
             {/* <FontAwesomeIcon icon={FaPhoneAlt} /> */}
             <p className="callUsToday">call us today!</p>
-            <a href="#tel:(561)223-1234">(561) 223-1234</a>
+            <a href="tel:(561)223-1234">(561) 223-1234</a>
           </div>
           <div className="emailUs">
             {/* <FontAwesomeIcon icon={FaEnvelope} /> */}
