@@ -1,11 +1,16 @@
 import React from 'react'
 import { useNavigate } from "react-router-dom";
 import { Navbar, Footer } from '../../components/index.js'
+import { useForm } from "react-hook-form";
 import './FindDoctor.css'
 import doctor1 from '../../Assets/doctor1.jpg';
 
 const FindDoctor = () => {
   let navigate = useNavigate();
+  const { register, handleSubmit, formState: { errors } } = useForm();
+  const onSubmit = (data) => {
+    console.log(data);
+  }
   const isVisible = true;
   const doctors = [
     {id: 1, src: doctor1, name: "Bernice Ray", Speciality: "Chief Surgeon"},
@@ -30,8 +35,9 @@ const FindDoctor = () => {
           <p className="findDocDescription">{search.desc}</p>
         </div>
         <div className="findDocForm">
-          <form >
-            <input type="text" placeholder={search.placeholder} />
+          <form onSubmit={handleSubmit(onSubmit)}>
+            <input type="text" placeholder={search.placeholder} {...register("input", { required: true, maxLength: 10 })} />
+            {errors.input && <p>Please check the {search.placeholder}</p>}
             <button className='findDocButton'>Search</button>
           </form>
         </div>

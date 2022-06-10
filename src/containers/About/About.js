@@ -80,7 +80,7 @@ const About = () => {
         <div className="specialistDescription">Contact us any suitable way and 
         make an appointment with the doctor whose help you need! 
         Visit us at the scheduled time and get your treatment.</div>
-        <div className="appointmentButton"><button>book an Appointment</button></div>
+        <div className="appointmentButton"><button onClick={() => {navigate("appointment", {replace: true})}}>book an Appointment</button></div>
       </section>
       <section className="ourGoalContainer">
         <div className="bgImage">

@@ -1,7 +1,7 @@
 import React from 'react'
 import { useParams } from 'react-router-dom'
 import './Profiles.css'
-import { Navbar, Footer } from './index'
+import { Navbar, PageName, Footer } from './index'
 import {FaFacebookF, FaTwitter, FaYoutube, FaPhoneAlt, FaEnvelope, FaQuoteLeft} from 'react-icons/fa'
 import { Link } from 'react-router-dom'
 
@@ -13,9 +13,11 @@ const Profiles = ({ doctors }) => {
     
     // console.log(doctor)
     // console.log("id", id)
+    const pageHeading = doctor.name
     return (
       <>
       <Navbar />
+      <PageName pageHeading={pageHeading} />
     {doctor ? <div className='profileContainer'>
       <div className="sideBarDoctors">
         <h1>our experts</h1>

@@ -1,10 +1,15 @@
 import React from 'react'
 import { Navbar, PageName, Footer } from '../../components/index.js'
 import './ContactUs.css'
+import { useForm } from "react-hook-form";
 import {FaFacebookF, FaTwitter, FaYoutube} from 'react-icons/fa'
 import { Link } from 'react-router-dom'
 
 const ContactUs = () => {
+  const { register, handleSubmit, formState: { errors } } = useForm();
+  const onSubmit = (data) => {
+    console.log(data);
+  }
   const pageHeading = "Contact Us"
   return (
     <div>
@@ -14,11 +19,18 @@ const ContactUs = () => {
         <div className="contactForm">
           <h1 className="formHead">How Can we Help you today?</h1>
           <p className="contactFormDetails">Egestas suspendisse morbi quis pulvinar nam condimentum risus etiam blandit aptent curae rutrum feugiat.</p>
-          <form className='contactUsNowForm' action="">
-            <input type="text" placeholder='Your Name*' />
-            <input type="number" placeholder='Phone*' />
-            <input type="email" placeholder='Email*' />
-            <input type="text" placeholder='How May We Help You?' />
+          <form className='contactUsNowForm' onSubmit={handleSubmit(onSubmit)} >
+            <input type="text" placeholder='Your Name*' {...register("fullName", { required: true, maxLength: 10 })} />
+            {errors.fullName && <p>Please check the Name</p>}
+            <input type="number" placeholder='Phone*' {...register("phone", {required: true, pattern: /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/})} />
+            {errors.phone && <p>Please check the Phone Number</p>}
+            <input type="email" placeholder='Email*' {...register("email", {
+                                required: true,
+                                pattern: /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+                            })} />
+            {errors.email && <p>Please check the Email</p>}
+            <input type="text" placeholder='How May We Help You?' {...register("help", { required: true, maxLength: 100 })} />
+            {errors.help && <p>Please check the query</p>}
             <button type='submit'>Submit Now</button>
           </form>
         </div>

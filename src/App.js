@@ -6,7 +6,7 @@ import {
   Route,
 } from "react-router-dom";
 import { Home, Services, Experts, FindDoctor, About, Locations, Blogs, Career, ContactUs, PatientInfo, BillPay, Testimonials } from './containers/index.js';
-import { Profiles, Service } from './components';
+import { Appointment, Profiles, Service } from './components';
 import { doctors, allServices, allInfos } from './api/data'
 
 function App() {
@@ -30,6 +30,7 @@ function App() {
           <Route path='patient/info/:id' element={<Service allInfos={allInfos} />} />
           <Route path="contact" element={<ContactUs />} />
           <Route path="testimonials" element={<Testimonials />} />
+          <Route path="about/appointment" element={<Appointment />} />
         </Routes>
       </BrowserRouter>
     </div>
