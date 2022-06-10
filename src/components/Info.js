@@ -1,11 +1,13 @@
 import React from 'react'
 import './Info.css'
+import { useNavigate } from 'react-router-dom';
 import bed from '../Assets/bedlogo.jpg'
 import volun from '../Assets/volulogo.jpg'
 import doctor from '../Assets/doctorlogo.jpg'
 import id from '../Assets/idlogo.jpg'
 
 const Info = () => {
+    let navigate = useNavigate();
     const howMuch = [
         {id: 1, name: "Beds", amount: "800+", src: bed},
         {id: 2, name: "Team Members", amount: "1200+", src: id},
@@ -53,7 +55,7 @@ const Info = () => {
                     Brought over us seasons greater, land sea, the created gathered bring spirit 
                     whose upon years fruitful third dominion cattle midst night morning bring.
                 </p></div>
-            <div className="contactbutt"><button>CONTACT US</button></div>
+            <div className="contactbutt"><button onClick={() => {navigate("contact", {replace: true})}}>CONTACT US</button></div>
         </div>
     </div>
   )

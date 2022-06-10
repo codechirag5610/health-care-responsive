@@ -25,7 +25,7 @@
     text-transform: capitalize;
     font-size: 25px;
 }
-.contactForm form{
+.contactForm .contactUsNowForm{
     align-items: center;
     display: flex;
     flex-direction: column;

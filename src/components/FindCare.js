@@ -1,7 +1,9 @@
 import React from 'react'
 import './FindCare.css'
+import { Link, useNavigate } from 'react-router-dom';
 
 const FindCare = () => {
+  let navigate = useNavigate();
   return (
     <div className='findCareContainer'>
       <div className="findHeading">
@@ -9,7 +11,7 @@ const FindCare = () => {
         <h1 className="head2">near you</h1>
       </div>
       <div className="locationButton">
-        <button className="locButt">healthcare locations</button>
+        <button className="locButt" onClick={() => {navigate("locations", {replace: true})}}>healthcare locations</button>
       </div>
     </div>
   )

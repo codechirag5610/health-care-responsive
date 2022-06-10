@@ -22,11 +22,11 @@ const BillPay = () => {
                 Monday through Friday from 8 a.m. to 5 p.m.</p>
             </div>
             <div className="form">
-                <form action="">
+                <form className='payBillNowform' action="">
                     <div className="inputs">
                         {details.map(detail => {
                             return(
-                                <div className="input" key={detail.id}>
+                                <div className="payBillNowInput" key={detail.id}>
                         <label htmlFor="">{detail.name}</label>
                         <input type="text" className='billInput' />
                         </div>

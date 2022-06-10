@@ -9,3 +9,5 @@ export { default as FindCare } from './FindCare';
 export { default as Blog } from './Blog';
 export { default as Footer } from './Footer';
 export { default as PageName } from './PageName';
+export { default as Profiles } from './Profiles';
+export { default as Service } from './Service';

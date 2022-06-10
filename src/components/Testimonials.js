@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import './Testimonials.css'
 import { Carousel } from 'react-bootstrap';
-import doctor from '../Assets/doctor1.jpg';
+import banner from '../Assets/videobanner.jpg';
 import color from '../Assets/color.jpg';
 import play from '../Assets/play-button.png';
 
@@ -15,7 +15,7 @@ const Testimonials = () => {
   return (
     <div className='testimonialsContainer'>
       <div className="photoVideo">
-        <img className='doctorPhoto' src={doctor} alt="" />
+        <img className='doctorPhoto' src={banner} alt="" />
         {/* <div className="doctorVideo">
           <p className="watch">watch healthcare video</p>
           <a type='button' className="videoButton"><img src={play} alt="" /></a>

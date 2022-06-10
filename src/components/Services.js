@@ -1,5 +1,6 @@
 import React from 'react'
 import './Services.css'
+import { Link, useNavigate } from 'react-router-dom';
 import healthCare from "../Assets/healthcare.png"
 import brain from "../Assets/brain.png"
 import pediatry from "../Assets/pediatry.png"
@@ -8,6 +9,7 @@ import dental from "../Assets/dental-care.png"
 import bone from "../Assets/bone.png"
 
 const Services = () => {
+    let navigate = useNavigate();
     const services = [
         {id: 1, src: healthCare, name: "Emergency Care"},
         {id: 2, src: brain, name: "Neurology"},
@@ -32,14 +34,15 @@ const Services = () => {
             void creepeth Together in face for he can't us. 
             Seas air beast behold creature itself herb place, days.
             </p>
-            <button className='allServices'>SEE ALL SERVICES</button>
+            <button className='allServices' onClick={() => {navigate("services", {replace: true})}}>SEE ALL SERVICES</button>
         </div>
         <div className="services">
                 {services.map(service => {
                     return(
                         <div className="service" key={service.id}>
+                            <Link className="serviceName" to={`service/${service.id}`}>
                             <img className='serviceIcon' src={service.src} alt={service.name} />
-                            <p className="serviceName">{service.name}</p>
+                            <p className='serviceTitle'>{service.name}</p></Link>
                         </div>
                     )
                 })}

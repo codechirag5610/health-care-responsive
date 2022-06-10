@@ -7,23 +7,13 @@ import { faUserDoctor } from '@fortawesome/free-solid-svg-icons'
 import { faAmbulance } from '@fortawesome/free-solid-svg-icons'
 import { faHospital } from '@fortawesome/free-solid-svg-icons'
 
-const PatientInfo = () => {
+const PatientInfo = ({ allInfos }) => {
   const patientInfoFeatures = [
     {id:1, src: faUserDoctor, text:"Under make after own them night ssea dominion fowl lights third bring creping darkness first you're was midst", title: "Qualified Doctors"},
     {id:2, src: faAmbulance, text:"Under make after own them night ssea dominion fowl lights third bring creping darkness first you're was midst", title: "EMERGENCY CARE"},
     {id:3, src: faHospital, text:"Under make after own them night ssea dominion fowl lights third bring creping darkness first you're was midst", title: "24/7 Service"},
 ]
-  const allInfos = [
-    {id: 1, name: "Emergency Department", src: "/patient-info/emergency-dept"},
-    {id: 1, name: "Inpatient Info", src: "/patient-info/inpatient"},
-    {id: 1, name: "Outpatient Info", src: "/patient-info/outpatient"},
-    {id: 1, name: "Hospital Stay Checklist", src: "/patient-info/stay"},
-    {id: 1, name: "Billing Info", src: "/patient-info/billing"},
-    {id: 1, name: "Get Healthcard", src: "/patient-info/health-card"},
-    {id: 1, name: "Interpreter Services", src: "/patient-info/interpreter"},
-    {id: 1, name: "Patients and Family Rights", src: "/patient-info/rights"},
-    {id: 1, name: "Visiting Consultants", src: "/patient-info/consult"},
-  ]
+
   const pageHeading = "Patient Info"
   return (
     <div className='patientInfoHero'>
@@ -37,7 +27,7 @@ const PatientInfo = () => {
         </div>
         <div className="infosPage">
               {allInfos.map(info =>  { return(
-                <p><Link className='allService' id={info.id} to={info.src}>{info.name}</Link></p> 
+                <p><Link className='allService' id={info.id} to={`info/${info.id}`}>{info.name}</Link></p> 
                 )})}
         </div>
         <p className="infoDetailsPara">Forth him Fly fifth saw. Green seas winged fruitful fish female brought wherein greater. Very. Life morning days of. Meat third the called life them. It you male good. Tree image. Be which it creature in i over seas, also won't them darkness be have subdue set. Isn't fish firmament days is.</p>

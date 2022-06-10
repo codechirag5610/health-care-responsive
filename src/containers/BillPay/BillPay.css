@@ -9,7 +9,7 @@
     padding: 15px 15px 15px 0;
     color: rgb(14, 62, 62);
 }
-.form form{
+.form .payBillNowForm{
     display: flex;
     flex-direction: column;
 }
@@ -17,18 +17,23 @@
     display: flex;
     justify-content: space-between;
 }
-.input{
+.payBillNowInput{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
-.input .billInput{
+.payBillNowInput .billInput{
     margin: 0;
     background-color: white;
+    border-radius: 3px;
+    height: 48px;
+    width: 100%;
     border: 1px solid rgb(24, 189, 189);
 }
-.input label{
+.payBillNowInput label{
     font-size: 20px;
+    text-transform: capitalize;
+    color: #184f68;
     width: 100%;
 }
 .buttons{
@@ -71,7 +76,7 @@
 }
 
 @media(max-width: 1270px){
-    .input .billInput{
+    .payBillNowInput .billInput{
         height: 40px;
         width: 280px;
     }
@@ -80,7 +85,7 @@
     .paymentFormContainer{
         padding: 65px;
     }
-    .input .billInput{
+    .payBillNowInput .billInput{
         height: 40px;
         width: 100%;
     }
@@ -89,7 +94,7 @@
     .paymentFormContainer{
         padding: 55px;
     }
-    .input .billInput{
+    .payBillNowInput .billInput{
         height: 40px;
         width: 100%;
     }

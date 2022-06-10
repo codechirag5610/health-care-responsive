@@ -85,6 +85,9 @@
     display: flex;
     cursor: pointer;
 } */
+button Link{
+    text-decoration: none;
+}
 .allDoctors{
     padding-top: 25px;
     text-align: center;

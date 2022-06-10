@@ -1,36 +1,18 @@
-import React, { useState } from 'react'
+// import React, { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { Navbar, Appointment, Doctors, Footer, PageName } from '../../components/index.js'
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import './Services.css'
-import doctor1 from '../../Assets/doctor1.jpg';
+import { doctors } from '../../api/data';
 
-const Services = () => {
+const Services = ({ allServices }) => {
   const isVisible = true;
   let navigate = useNavigate();
-  const doctors = [
-    {id: 1, src: doctor1, name: "Bernice Ray", Speciality: "Chief Surgeon"},
-    {id: 2, src: doctor1, name: "Bernice Ray", Speciality: "Chief Surgeon"},
-    {id: 3, src: doctor1, name: "Bernice Ray", Speciality: "Chief Surgeon"},
-  ]
+  const initialDoctors = doctors.slice(0, 3)
   const handleClick = () => {
       navigate("/experts", { replace: true});
   }
-  const allServices = [
-    {id: 1, name: "24/7 Emergency Care", src: "/services/emergency"},
-    {id: 1, name: "Primary Care", src: "/services/primary"},
-    {id: 1, name: "Neurology and Sleep Machine", src: "/services/neuro"},
-    {id: 1, name: "Opthamology", src: "/services/opthamology"},
-    {id: 1, name: "Cardiology", src: "/services/cardio"},
-    {id: 1, name: "Home Care Services", src: "/services/home-care"},
-    {id: 1, name: "Behavioural and Mental Health", src: "/services/mental-health"},
-    {id: 1, name: "Diagnositic Imaging", src: "/services/diagnosis"},
-    {id: 1, name: "Physical Therapy and Rehabilitation", src: "/services/physical-and-rehab"},
-    {id: 1, name: "Orthopedics", src: "/services/ortho"},
-    {id: 1, name: "Surgical Services", src: "/services/surgery"},
-    {id: 1, name: "Wound Care and Hyperbaric Medicine", src: "/services/wound-care"},
-  ]
   const pageHeading = "Our Services";
   const responsive = {
     superLargeDesktop: {
@@ -74,7 +56,7 @@ const Services = () => {
           </div>
           <div className="servicesPage">
             {allServices.map(allService =>  { return(
-              <p><Link className='allService' id={allService.id} to={allService.src}>{allService.name}</Link></p> 
+              <p id={allService.id}><Link className='allService' id={allService.id} to={`service/${allService.id}`}>{allService.name}</Link></p> 
               )})}
           </div>
         </div>
@@ -94,7 +76,7 @@ const Services = () => {
           </div>)})}
         </Carousel>
         </div>
-        <Doctors handleClick={handleClick} doctors={doctors} isVisible={isVisible} />
+        <Doctors handleClick={handleClick} doctors={initialDoctors} isVisible={isVisible} />
         <Footer />
     </div>
   )

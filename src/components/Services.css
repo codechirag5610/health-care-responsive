@@ -63,13 +63,15 @@
     height: 10rem;
     width: 10rem;
 }
-.services :hover{
+.service .serviceName:hover{
     cursor: pointer;
     color: rgb(237, 76, 76);
     transition: 0.6s ease-in-out;
 }
 .service .serviceName{
     font-size: 18px;
+    text-decoration: none;
+    color: rgb(24, 189, 189);
 }
 @media(max-width: 1500px){
     .serviceContainer{

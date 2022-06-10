@@ -1,9 +1,12 @@
 import React from 'react'
+// import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom';
 import './Doctors.css'
 
 
 const Doctors = ({ handleClick, doctors, isVisible }) => {
-  
+  // console.log(doctors)
+  let navigate = useNavigate();
   return (
     <div className='doctorContainer'>
       <div className="info">
@@ -18,7 +21,7 @@ const Doctors = ({ handleClick, doctors, isVisible }) => {
               <div className="doctorProfile">
                 <h3 className="doctorName">{doctor.name}</h3>
                 <p className="doctorSpecialty">{doctor.Speciality}</p>
-                <button className='doctorView'>View Profile</button>
+                <button className='doctorView' onClick={() => {navigate(`profiles/${doctor.id}`, {replace: true})}}>View Profile</button>
               </div>
             </div>
           )
@@ -32,3 +35,5 @@ const Doctors = ({ handleClick, doctors, isVisible }) => {
 }
 
 export default Doctors
+
+{/*  */}

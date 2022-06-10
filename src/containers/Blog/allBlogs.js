@@ -7,6 +7,7 @@ import blog7 from '../../Assets/blog7.jpg'
 import blog8 from '../../Assets/blog8.jpg'
 import blog9 from '../../Assets/blog9.jpg'
 import { FaQuoteLeft } from 'react-icons/fa'
+import { FiLink } from 'react-icons/fi'
 
 export const allBlogs = [
     {
@@ -32,7 +33,7 @@ export const allBlogs = [
         type: "regular"},
     {
         id: 4, 
-        src: "", 
+        src: (<FaQuoteLeft color='white' size={46} />), 
         source: "DIETER RAMS", 
         text: "Second Yielding Wherein First Wherein A Sea Was God Green Don't Face Greater.Good Fourth A Had", 
         type: "irregular"},
@@ -59,7 +60,7 @@ export const allBlogs = [
         type: "regular"},
     {
         id: 8, 
-        src: "", 
+        src: (<FiLink color='white' size={46} />), 
         source: "WWW.HEALTHCARE.COM", 
         text: "Cattle Day She'd Over Saying Man Which Void Likeness Their Set Living", 
         type: "irregular"},
@@ -86,7 +87,7 @@ export const allBlogs = [
         type: "regular"},
     {
         id: 12, 
-        src: "", 
+        src: (<FiLink color='white' size={46} />), 
         source: "WWW.HEALTHCARE.COM", 
         text: "Cattle Day She'd Over Saying Man Which Void Likeness Their Set Living", 
         type: "irregular"},

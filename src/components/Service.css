@@ -1,0 +1,45 @@
+.soloServiceContainer{
+    padding: 75px 95px;
+    background-color: #f1f8fc;
+    width: 100%;
+}
+.soloServiceHeadingContainer{
+    padding: 20px 0;
+}
+.soloServiceHeadingContainer h1{
+    text-transform: capitalize;
+    color: #184f68;
+}
+.soloServiceImage img{
+    width: 100%;
+    /* height: 100vh; */
+    border-radius: 5px;
+}
+.soloServiceDescription{
+    padding: 20px 0;
+    color: #184f68;
+}
+.soloServiceDescription p{
+    text-transform: capitalize;
+    font-size: 22px;
+}
+.soloServiceDescription h3{
+    text-transform: uppercase;
+}
+.soloServiceQuote{
+    margin: 20px 0;
+    padding: 25px;
+    display: flex;
+    background-color: rgb(24, 189, 189);
+    border-radius: 5px;
+}
+.soloQuote{
+    color: white;
+    font-size: 22px;
+    font-style: italic;
+}
+@media(max-width: 450px){
+    .soloServiceContainer{
+        padding: 45px 25px;
+    }
+}

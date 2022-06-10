@@ -14,7 +14,7 @@ const ContactUs = () => {
         <div className="contactForm">
           <h1 className="formHead">How Can we Help you today?</h1>
           <p className="contactFormDetails">Egestas suspendisse morbi quis pulvinar nam condimentum risus etiam blandit aptent curae rutrum feugiat.</p>
-          <form action="">
+          <form className='contactUsNowForm' action="">
             <input type="text" placeholder='Your Name*' />
             <input type="number" placeholder='Phone*' />
             <input type="email" placeholder='Email*' />

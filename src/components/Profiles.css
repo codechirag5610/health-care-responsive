@@ -1,0 +1,199 @@
+.profileContainer{
+    display: flex;
+    padding: 75px 95px;
+}
+.sideBarDoctors{
+    /* flex: 1; */
+    padding: 0 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.sideBarDoctors h1{
+    color: #184f68;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+.sideBarDoctor:hover{
+    transform: translateX(1rem);
+    transition: 0.5s ease-out;
+}
+.sideBarDoctor .sideBarDocName{
+    color: rgb(24, 189, 189);
+    text-transform: capitalize;
+    font-size: 18px;
+}
+.sideBarDoctor .sideBarDocName:hover{
+    color: #184f68;
+    transition: 0.5s ease-in-out;
+}
+.sideBarDoctor .sideBarDocSpeciality{
+    color: rgb(120, 141, 141);
+    text-transform: capitalize;
+    font-size: 14px;
+}
+.hrLineProfiles{
+    margin: 12px 0;
+    height: 0.5px;
+    width: 100%;
+    background-color: rgb(120, 141, 141);
+}
+.mainDoctorProfile{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.profilePic{
+    display: flex;
+}
+.profilePic .profilePicture{
+    /* flex: 1; */
+    margin: 0 10px;
+    border-radius: 3px;
+}
+.nameAndInfo{
+    margin: 0 10px;
+    padding: 35px;
+    border-radius: 3px;
+    background-color: rgb(24, 189, 189);
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.profileHrLine{
+    width: 90%;
+    height: 1px;
+    margin: 5px 0;
+    background-color: rgb(90, 224, 224);
+}
+.profileName{
+    color: white;
+}
+.profileName .docName{
+    font-size: 35px;
+    text-transform: uppercase;
+}
+.profileName .docSpec{
+    font-size: 18px;
+    text-transform: capitalize;
+}
+.profileContactInfo{
+    color: #184f68;
+}
+.profileCallUs :hover, .profileEmailUs :hover{
+    color: white;
+    transition: 0.3s ease-in-out;
+}
+.profileContactConnection{
+    margin: 15px 0px;
+}
+.profileConnectText{
+    text-transform: capitalize;
+}
+.profileConnectLogos Link .profileConnectLogo{
+    margin: 0 15px;
+}
+.profileCallUs a, .profileEmailUs a{
+    text-decoration: none;
+    padding: 0 5px;
+    color: #184f68;
+}
+.profileDoctorQuote{
+    color: #184f68;
+}
+.profileDoctorBiography{
+    color: #184f68;
+    margin: 35px 5px;
+}
+.profileDoctorBiography h3{
+    text-transform: uppercase;
+    margin: 15px 0 5px;
+}
+.profileDoctorBiography .profileBiography, .profileEducation .edudescription{
+    text-transform: capitalize;
+}
+.titleTime{
+    display: flex;
+}
+.eduTitle{
+    color: rgb(24, 189, 189);
+    text-transform: capitalize;
+    font-size: 20px;
+    margin-right: 3px;
+}
+.contactDoctor{
+    margin: 20px 5px;
+    background-color: rgb(24, 189, 189);
+    width: 80%;
+    border-radius: 3px;
+    padding: 35px 55px;
+}
+.contactDoctor h3{
+    color: #184f68;
+    text-transform: uppercase;
+    margin: 15px 0 5px;
+}
+.contactDoctor form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.contactDoctor input{
+    margin: 15px;
+    width: 80%;
+    height: 50px;
+    border: 0;
+    border-radius: 3px;
+}
+.contactDoctor button{
+    color: white;
+    background-color: #f84d4f;
+    margin: 15px;
+    width: 280px;
+    height: 50px;
+    border: 0;
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-weight: 200;
+    box-shadow: inset 0 0 0 0 #184f68;
+  -webkit-transition: ease-in-out 0.6s;
+  -moz-transition: ease-in-out 0.6s;
+  transition: ease-in-out 0.6s;
+}
+.contactDoctor button:hover{
+    box-shadow: inset 400px 0 0 0 #184f68;
+}
+ /* .contactDoctor .case{
+    width: 560px;
+    height: 70px;
+} */
+::placeholder{
+    text-transform: capitalize;
+    padding-left: 5px;
+}
+
+@media(max-width: 1001px){
+    .profileContainer{
+        flex-direction: column-reverse;
+    }
+    .sideBarDoctors{
+        align-items: center;
+    }
+    .contactDoctor form{
+        grid-template-columns: 1fr;
+    }
+}
+@media(max-width: 660px){
+    .contactDoctor{
+        width: 80%;
+    }
+    .contactDoctor input{
+        width: 80%;
+        height: 45px;
+    }
+    .contactDoctor button{
+        width: 80%;
+        height: 45px;
+    }
+}

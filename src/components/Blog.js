@@ -1,10 +1,12 @@
 import React from 'react'
 import './Blog.css'
+import { Link, useNavigate } from 'react-router-dom';
 import blog1 from '../Assets/blog1.jpg'
 import blog2 from '../Assets/blog2.jpg'
 import blog3 from '../Assets/blog3.jpg'
 
 const Blog = () => {
+  let navigate = useNavigate();
   const blogs = [
     {id: 1, src: blog1, name: "from fowl moving night our wherein herb seed", date: "Sept 03, 2019"},
     {id: 1, src: blog2, name: "from fowl moving night our wherein herb seed", date: "Sept 03, 2019"},
@@ -32,7 +34,7 @@ const Blog = () => {
         </div>
       </div>
       <div className="allBlogs">
-        <a type='button' className="allBlogsButton">see all healthcare blogs</a>
+        <a type='button' className="allBlogsButton" onClick={() => {navigate("blogs", {replace: true})}}>see all healthcare blogs</a>
       </div>
     </div>
   )
